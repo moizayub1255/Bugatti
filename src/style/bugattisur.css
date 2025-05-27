@@ -1,0 +1,69 @@
+.bu_main{
+    width: 100%;
+    height: 120vh;
+    background-color: #080808;
+    margin-top: -250px
+}
+
+.header_post{
+    width: 100%;
+    height: 20vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 20px;
+    /* background-color: #11ff09; */
+}
+.header_post>h3{
+    font-size: 40px;
+    font-weight: 100;
+    margin-top: 30px;
+}
+.header_post>p{
+    font-size: small;
+    font-weight: lighter;
+}
+.center_div{
+    display: flex;
+    justify-content: center;
+}
+
+.right_sec{
+    width: 40%;
+    height: 80vh;
+    background-image: url('https://bugatti.imgix.net/67346e73c5aae03fb24d085d/04_bugatti_chiron_macaron.jpg?auto=format,compress&cs=srgb&sharp=10&fit=crop&ar=4:5&h=798&fp-x=0.5&fp-y=0.5&dpr=0.8333333730697632');
+    background-size: cover;
+}
+.headtag{
+    text-transform: capitalize;
+    font-size: 25px;
+    margin-left: 30px;
+    font-weight: lighter;
+    /* padding-bottom: 20px; */
+}
+.left_sec>p{
+    font-size: small;
+    padding-left: 40px;
+    padding-top: 10px;
+    font-weight: lighter;
+}
+.left_sec{
+    width: 40%;
+    height: 80vh;
+     background-color: #151515;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.left_sec>button{
+    color: aliceblue;
+    font-weight: 100;
+    font-size: 10px;
+    margin-top: 90px;
+    width: 290px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: rgb(0, 0, 0);
+}
