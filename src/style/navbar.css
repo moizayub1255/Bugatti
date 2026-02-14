@@ -4,7 +4,7 @@
   width: 100%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-between;
   padding: 1.5rem 4rem;
   background: rgba(0, 0, 0, 0.3);
   backdrop-filter: blur(10px);
@@ -12,13 +12,12 @@
   box-shadow: 0 2px 20px rgba(0, 0, 0, 0.2);
   transition: all 0.3s ease;
   box-sizing: border-box;
-  gap: 4rem;
 }
 
 .leftNav ul,
 .rightNav ul {
   display: flex;
-  gap: 3rem;
+  gap: 2rem;
   list-style: none;
   margin: 0;
   padding: 0;
@@ -71,8 +70,9 @@
 }
 
 .brandName {
-  position: absolute;
-  left: 4rem;
+  position: relative;
+  left: 0;
+  white-space: nowrap;
 }
 
 .brandName h1:hover {
@@ -123,7 +123,10 @@
 .navContent {
   display: flex;
   align-items: center;
-  gap: 4rem;
+  justify-content: space-between;
+  gap: 3rem;
+  flex: 1;
+  margin-left: 4rem;
 }
 
 .menuOverlay {
@@ -155,7 +158,7 @@
 
   .leftNav ul,
   .rightNav ul {
-    gap: 1.5rem;
+    gap: 1.2rem;
   }
 
   .leftNav li,
@@ -165,6 +168,10 @@
 
   .brandName h1 {
     font-size: 2rem;
+  }
+
+  .navContent {
+    margin-left: 2rem;
   }
 }
 
@@ -179,6 +186,7 @@
   .brandName {
     position: relative;
     left: 0;
+    white-space: nowrap;
   }
 
   .hamburger {
@@ -205,6 +213,8 @@
     transition: transform 0.35s cubic-bezier(0.4, 0, 0.2, 1);
     overflow-y: auto;
     box-shadow: -4px 0 15px rgba(0, 0, 0, 0.5);
+    margin-left: 0;
+    justify-content: flex-start;
   }
 
   .navContent.active {

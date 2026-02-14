@@ -1,22 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&family=Great+Vibes&display=swap");
 
-.card {
-  position: relative;
-  width: 420px;
-  height: 520px;
-  background-size: cover;
-  background-position: center;
-  background-repeat: no-repeat;
-  overflow: hidden;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: all 0.4s ease;
-}
-
-.card:hover {
-  transform: scale(1.02) translateY(-8px);
-}
+/* .card base styles removed - see grid section below */
 
 .card-overlay {
   position: absolute;
@@ -104,20 +88,21 @@
 
 .main_car_section {
   width: 100%;
-  min-height: 100vh;
+  min-height: auto;
   background: #0a0a0a;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding-bottom: 2rem;
+  padding: 60px 20px;
   box-sizing: border-box;
 }
 
 .headdings {
   text-align: center;
-  margin-top: 60px;
+  margin-top: 0;
   margin-bottom: 50px;
   padding: 0 20px;
+  width: 100%;
 }
 
 .headdings h3 {
@@ -141,17 +126,25 @@
 
 .card_section {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(300px, 420px));
-  gap: 60px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px 60px;
   justify-content: center;
-  align-items: start;
+  align-items: stretch;
   padding: 0 20px;
+  max-width: 1400px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+.card_section > div {
+  display: flex;
+  justify-content: center;
 }
 
 .card {
   position: relative;
   width: 100%;
-  max-width: 420px;
+  max-width: 380px;
   aspect-ratio: 420/520;
   background-size: cover;
   background-position: center;
@@ -161,6 +154,11 @@
   align-items: center;
   justify-content: center;
   transition: all 0.4s ease;
+  border-radius: 4px;
+}
+
+.card:hover {
+  transform: scale(1.02) translateY(-8px);
 }
 
 .card-head {
@@ -176,30 +174,36 @@
   padding: 12px 0;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 1200px) {
   .card_section {
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 30px 50px;
   }
 
   .card {
-    maximum-width: 90vw;
+    max-width: 100%;
+  }
+}
+
+@media (max-width: 900px) {
+  .card_section {
+    grid-template-columns: 1fr;
+    gap: 40px;
   }
 }
 
 @media (max-width: 768px) {
   .main_car_section {
-    padding-bottom: 1rem;
+    padding: 40px 15px;
   }
 
   .headdings {
-    margin-top: 40px;
     margin-bottom: 30px;
   }
 
   .card_section {
-    gap: 30px;
-    padding: 0 15px;
+    gap: 25px;
+    padding: 0 10px;
   }
 
   .card {
