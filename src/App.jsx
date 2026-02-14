@@ -24,11 +24,12 @@ function App() {
     setFooterPage(null);
   };
 
-  if (footerPage) {
-    return (
-      <>
-        <div className="main">
-          <Navbar />
+  return (
+    <>
+      <div className="main">
+        <Navbar />
+
+        {footerPage ? (
           <div style={{ paddingTop: "80px" }}>
             <button
               onClick={handleBackToMain}
@@ -53,22 +54,18 @@ function App() {
             </button>
             <FooterPages page={footerPage} />
           </div>
-        </div>
-      </>
-    );
-  }
+        ) : (
+          <>
+            <Startpage />
+            <LatestNews />
+            <LAmainsonIterator />
+            <IteratorSports />
+            {/* <Bugattisur/> */}
+            {/* <Animation/> */}
+            <IteratorBugattiLive />
+          </>
+        )}
 
-  return (
-    <>
-      <div className="main">
-        <Navbar />
-        <Startpage />
-        <LatestNews />
-        <LAmainsonIterator />
-        <IteratorSports />
-        {/* <Bugattisur/> */}
-        {/* <Animation/> */}
-        <IteratorBugattiLive />
         <Footer onFooterClick={handleFooterClick} />
       </div>
     </>
