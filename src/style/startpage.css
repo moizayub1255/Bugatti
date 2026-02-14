@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&display=swap");
+
 .background-video {
   position: fixed;
   top: 0;
@@ -11,16 +13,15 @@
 
 .startpage-content {
   position: relative;
-  width: 100vw;
-  height: 100vh; 
+  width: 100%;
+  height: 100vh;
   display: flex;
   align-items: center;
   justify-content: center;
   z-index: 1;
- margin-bottom: 20px;
-  
+  margin-bottom: 20px;
+  box-sizing: border-box;
 }
-
 
 .content {
   position: relative;
@@ -30,32 +31,77 @@
   align-items: center;
   justify-content: center;
   color: #fff;
-  text-shadow: 0 2px 8px rgba(0,0,0,0.7);
-  font-size: 85.6px
+  text-shadow: 0 4px 20px rgba(0, 0, 0, 0.8);
+  /* font-size: clamp(2rem, 8vw, 4.5rem); */
+  font-family: "Playfair Display", serif;
+  font-weight: 700;
+  letter-spacing: 3px;
+  text-transform: uppercase;
+  padding: 0 20px;
+  text-align: center;
 }
 
 .discover {
-  margin-top: 2rem;
-  padding: 1rem 2rem;
-  font-size: 1.2rem;
-  background: rgba(0,0,0,0.6);
+  margin-top: 3rem;
+  padding: 15px 45px;
+  font-size: 1rem;
+  font-family: "Poppins", sans-serif;
+  font-weight: 600;
+  background: rgba(255, 255, 255, 0.1);
   color: #fff;
-  border-radius: 1;
+  border: 2px solid #fff;
+  border-radius: 0;
   cursor: pointer;
-  transition: background 0.2s;
-}
-.discover:hover {
-  background: rgba(171, 165, 165, 0.8);
+  transition: all 0.4s ease;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  backdrop-filter: blur(5px);
 }
 
+.discover:hover {
+  background: #fff;
+  color: #000;
+  transform: translateY(-2px);
+  box-shadow: 0 10px 30px rgba(255, 255, 255, 0.3);
+}
 
 .main {
-  width: 100vw;
+  width: 100%;
   overflow-x: hidden;
+  box-sizing: border-box;
 }
 
 .latest-news-section {
-  padding: 4rem 0 2rem 0;
+  padding: 6rem 0 4rem 0;
   background: #fff;
   color: #222;
+}
+
+@media (max-width: 768px) {
+  .latest-news-section {
+    padding: 4rem 0 2rem 0;
+  }
+
+  .content {
+    letter-spacing: 1px;
+  }
+
+  .discover {
+    margin-top: 2rem;
+    padding: 12px 30px;
+    font-size: 0.85rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .latest-news-section {
+    padding: 2rem 0 1rem 0;
+  }
+
+  .discover {
+    margin-top: 1.5rem;
+    padding: 10px 20px;
+    font-size: 0.75rem;
+    letter-spacing: 1px;
+  }
 }

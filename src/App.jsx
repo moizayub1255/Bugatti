@@ -21,7 +21,7 @@ function App() {
     <LAmainsonIterator/>
     <IteratorSports/>
     <Bugattisur/>
-    <Animation/>
+    {/* <Animation/> */}
     <IteratorBugattiLive/>
     <Footer/>
     </div>
