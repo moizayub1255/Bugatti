@@ -1,0 +1,392 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Poppins:wght@300;400;500;600&display=swap");
+
+.footer-pages-container {
+  width: 100%;
+  min-height: 100vh;
+  background: #0a0a0a;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.footer-page {
+  width: 100%;
+  min-height: 100vh;
+  background: #0a0a0a;
+  display: flex;
+  flex-direction: column;
+  animation: fadeIn 0.8s ease-out;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-page-hero {
+  width: 100%;
+  height: 50vh;
+  min-height: 400px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-page-hero::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background:
+    radial-gradient(
+      circle at 20% 80%,
+      rgba(255, 255, 255, 0.03) 0%,
+      transparent 50%
+    ),
+    radial-gradient(
+      circle at 80% 20%,
+      rgba(255, 255, 255, 0.02) 0%,
+      transparent 50%
+    );
+  pointer-events: none;
+}
+
+.footer-page-hero::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+}
+
+.footer-page-hero h1 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(2.5rem, 8vw, 5rem);
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  animation: slideDown 1s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.footer-page-hero p {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.9rem, 2vw, 1.2rem);
+  font-weight: 300;
+  color: #a0a0a0;
+  margin: 20px 0 0 0;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+  position: relative;
+  z-index: 1;
+  animation: fadeIn 1.2s ease-out;
+}
+
+.footer-page-content {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 80px 40px;
+  display: flex;
+  flex-direction: column;
+  gap: 60px;
+}
+
+.footer-page-section {
+  border-left: 1px solid rgba(255, 255, 255, 0.1);
+  padding-left: 40px;
+  position: relative;
+  animation: fadeIn 0.8s ease-out backwards;
+}
+
+.footer-page-section:nth-child(1) {
+  animation-delay: 0.1s;
+}
+.footer-page-section:nth-child(2) {
+  animation-delay: 0.2s;
+}
+.footer-page-section:nth-child(3) {
+  animation-delay: 0.3s;
+}
+.footer-page-section:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+.footer-page-section::before {
+  content: "";
+  position: absolute;
+  left: -1px;
+  top: 0;
+  width: 1px;
+  height: 0;
+  background: #ffffff;
+  transition: height 0.5s ease;
+}
+
+.footer-page-section:hover::before {
+  height: 100%;
+}
+
+.footer-page-section h2 {
+  font-family: "Playfair Display", serif;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 25px 0;
+  letter-spacing: 2px;
+  position: relative;
+}
+
+.footer-page-section h2::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  width: 40px;
+  height: 1px;
+  background: rgba(255, 255, 255, 0.3);
+}
+
+.footer-page-section p {
+  font-family: "Poppins", sans-serif;
+  font-size: clamp(0.9rem, 1.5vw, 1.05rem);
+  font-weight: 400;
+  color: #c0c0c0;
+  line-height: 1.9;
+  margin: 0;
+  letter-spacing: 0.3px;
+}
+
+.footer-page-section ul {
+  list-style: none;
+  padding: 0;
+  margin: 20px 0 0 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 15px;
+}
+
+.footer-page-section li {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.95rem;
+  font-weight: 400;
+  color: #b0b0b0;
+  padding: 15px 20px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+  letter-spacing: 0.5px;
+  position: relative;
+  overflow: hidden;
+}
+
+.footer-page-section li::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.05),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.footer-page-section li:hover {
+  color: #ffffff;
+  border-color: rgba(255, 255, 255, 0.15);
+  transform: translateX(5px);
+}
+
+.footer-page-section li:hover::before {
+  left: 100%;
+}
+
+/* News Item Styles */
+.news-item {
+  padding: 25px;
+  margin-bottom: 25px;
+  background: rgba(255, 255, 255, 0.02);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  transition: all 0.3s ease;
+}
+
+.news-item:hover {
+  background: rgba(255, 255, 255, 0.04);
+  border-color: rgba(255, 255, 255, 0.1);
+  transform: translateX(10px);
+}
+
+.news-date {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #808080;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  display: block;
+  margin-bottom: 10px;
+}
+
+.news-item h3 {
+  font-family: "Playfair Display", serif;
+  font-size: 1.3rem;
+  font-weight: 600;
+  color: #ffffff;
+  margin: 0 0 15px 0;
+  letter-spacing: 1px;
+}
+
+.news-item p {
+  font-size: 0.95rem;
+  line-height: 1.7;
+}
+
+/* Responsive Design */
+@media (max-width: 900px) {
+  .footer-page-content {
+    padding: 60px 30px;
+    gap: 40px;
+  }
+
+  .footer-page-section {
+    padding-left: 25px;
+  }
+
+  .footer-page-section ul {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .footer-page-hero {
+    height: 40vh;
+    min-height: 300px;
+  }
+
+  .footer-page-hero h1 {
+    letter-spacing: 4px;
+    padding: 0 20px;
+  }
+
+  .footer-page-hero p {
+    letter-spacing: 2px;
+    padding: 0 20px;
+  }
+
+  .footer-page-content {
+    padding: 40px 20px;
+    gap: 30px;
+  }
+
+  .footer-page-section {
+    padding-left: 20px;
+  }
+
+  .footer-page-section h2 {
+    font-size: 1.3rem;
+  }
+
+  .footer-page-section p {
+    font-size: 0.9rem;
+  }
+
+  .news-item {
+    padding: 20px;
+  }
+
+  .news-item h3 {
+    font-size: 1.1rem;
+  }
+}
+
+@media (max-width: 400px) {
+  .footer-page-hero h1 {
+    font-size: 2rem;
+    letter-spacing: 2px;
+  }
+
+  .footer-page-content {
+    padding: 30px 15px;
+  }
+
+  .footer-page-section {
+    padding-left: 15px;
+  }
+}
+
+/* Additional decorative elements */
+.footer-page::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.1),
+    transparent
+  );
+  z-index: 100;
+}
+
+/* Subtle grid pattern background */
+.footer-page::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.01) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.01) 1px, transparent 1px);
+  background-size: 50px 50px;
+  pointer-events: none;
+  z-index: 0;
+}
+
+.footer-page-hero,
+.footer-page-content {
+  position: relative;
+  z-index: 1;
+}
