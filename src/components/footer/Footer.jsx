@@ -15,11 +15,6 @@ const Footer = () => (
             <li>Careers</li>
             <li>Newsroom</li>
             <li>Classic Icons</li>
-            <li>Historic Models</li>
-            <li>Racing Legends</li>
-            <li>Les Patrons</li>
-            <li>La Maison Pur Sang</li>
-            <li>Dealer Finder</li>
             <li>Contact</li>
           </ul>
         </div>
@@ -30,10 +25,6 @@ const Footer = () => (
             <li>W16 MISTRAL</li>
             <li>BOLIDE</li>
             <li>CHIRON</li>
-            <li>LA VOITURE NOIRE</li>
-            <li>DIVO</li>
-            <li>CENTODIECI</li>
-            <li>Sur Mesure</li>
           </ul>
         </div>
         <div>
@@ -43,10 +34,6 @@ const Footer = () => (
             <li>Maintenance</li>
             <li>Service Partner Network</li>
             <li>Passport Tranquillité</li>
-            <li>Warranty</li>
-            <li>Roadside Assistance</li>
-            <li>Genuine Parts</li>
-            <li>BUGATTI Accessories</li>
           </ul>
         </div>
         <div>
@@ -61,35 +48,7 @@ const Footer = () => (
         </div>
       </div>
     </div>
-    <div className="footer-bottom">
-      <div className="footer-bottom-left">
-        <span>© 2025 BUGATTI AUTOMOBILES S.A.S.</span>
-        <div className="footer-links-row">
-          <a href="#">Legal Notice</a>
-          <a href="#">Privacy Policy</a>
-          <a href="#">Cookie Policy</a>
-          <a href="#">Modern Slavery Statement</a>
-          <a href="#">Gender Equality Index</a>
-          <a href="#">Privacy Settings</a>
-          <a href="#">Compliance & Whistleblower</a>
-          <a href="#">Fuel Consumption</a>
-        </div>
-        <div className="footer-socials">
-          <a href="#"><FaLinkedinIn /></a>
-          <a href="#"><FaInstagram /></a>
-          <a href="#"><FaFacebookF /></a>
-          <a href="#"><FaYoutube /></a>
-          <a href="#"><FaWeibo /></a>
-        </div>
-      </div>
-      <div className="footer-bottom-right">
-        <div className="footer-lang-title">LANGUAGE</div>
-        <div className="footer-langs">
-          <span>English</span>
-          <span>Français</span>
-        </div>
-      </div>
-    </div>
+    
   </footer>
 );
 

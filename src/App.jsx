@@ -20,7 +20,7 @@ function App() {
     <LatestNews/>
     <LAmainsonIterator/>
     <IteratorSports/>
-    <Bugattisur/>
+    {/* <Bugattisur/> */}
     {/* <Animation/> */}
     <IteratorBugattiLive/>
     <Footer/>
