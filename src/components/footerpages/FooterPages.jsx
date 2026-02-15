@@ -362,6 +362,80 @@ const Chiron = () => (
   </div>
 );
 
+const Divo = () => (
+  <div className="footer-page">
+    <div className="footer-page-hero">
+      <h1>Divo</h1>
+      <p>Modern Coachbuilding at Its Best</p>
+    </div>
+    <div className="footer-page-content">
+      <div className="footer-page-section">
+        <h2>A Coachbuilding Masterpiece</h2>
+        <p>
+          The Bugatti Divo is a modern coachbuilding masterpiece, designed for
+          clients who seek the ultimate in exclusivity and dynamic performance.
+          Only 40 examples were produced.
+        </p>
+      </div>
+      <div className="footer-page-section">
+        <h2>Performance</h2>
+        <ul>
+          <li>Engine: 8.0L W16 Turbo</li>
+          <li>Power: 1,500 hp</li>
+          <li>Torque: 1,600 Nm</li>
+          <li>0-100 km/h: 2.4 seconds</li>
+          <li>Top Speed: 380 km/h</li>
+        </ul>
+      </div>
+      <div className="footer-page-section">
+        <h2>Design</h2>
+        <p>
+          The Divo features a radically different design with enhanced
+          aerodynamics, including a larger rear wing and distinctive LED
+          lighting signature.
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
+const Centodieci = () => (
+  <div className="footer-page">
+    <div className="footer-page-hero">
+      <h1>Centodieci</h1>
+      <p>Reminiscence of an Icon</p>
+    </div>
+    <div className="footer-page-content">
+      <div className="footer-page-section">
+        <h2>Tribute to a Legend</h2>
+        <p>
+          The Bugatti Centodieci is a limited-production hyper sports car that
+          pays homage to the iconic EB110 from the 1990s. Only 10 examples were
+          created, each a work of art.
+        </p>
+      </div>
+      <div className="footer-page-section">
+        <h2>Performance</h2>
+        <ul>
+          <li>Engine: 8.0L W16 Turbo</li>
+          <li>Power: 1,600 hp</li>
+          <li>Torque: 1,600 Nm</li>
+          <li>0-100 km/h: 2.4 seconds</li>
+          <li>Top Speed: 380 km/h</li>
+        </ul>
+      </div>
+      <div className="footer-page-section">
+        <h2>Design</h2>
+        <p>
+          The Centodieci features a distinctive design with sharp angles and
+          aggressive styling, inspired by the legendary EB110 while
+          incorporating modern Bugatti design language.
+        </p>
+      </div>
+    </div>
+  </div>
+);
+
 // CUSTOMER SERVICE Pages
 const IndividualService = () => (
   <div className="footer-page">
@@ -708,6 +782,10 @@ const FooterPages = ({ page }) => {
         return <Bolide />;
       case "chiron":
         return <Chiron />;
+      case "divo":
+        return <Divo />;
+      case "centodieci":
+        return <Centodieci />;
       // CUSTOMER SERVICE
       case "individual-service":
         return <IndividualService />;
@@ -747,6 +825,8 @@ export {
   W16Mistral,
   Bolide,
   Chiron,
+  Divo,
+  Centodieci,
   IndividualService,
   Maintenance,
   ServicePartner,

@@ -1,5 +1,6 @@
 import React from "react";
 import "../../style/startpage.css";
+import { Link } from "react-router-dom";
 
 const Startpage = () => {
   return (
@@ -16,7 +17,7 @@ const Startpage = () => {
         <div className="content">
           <h2>THIS IS FOR</h2>
           <h2>ETERNITY</h2>
-          <button className="discover">DISCOVER THE BUGATTI TOURBILLON</button>
+          <Link to="/tourbillon" className="discover">DISCOVER THE BUGATTI TOURBILLON</Link>
         </div>
       </div>
     </>

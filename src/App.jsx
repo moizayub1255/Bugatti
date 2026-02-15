@@ -47,6 +47,11 @@ function App() {
             <Route path="/mistral" element={<FooterPages page="mistral" />} />
             <Route path="/bolide" element={<FooterPages page="bolide" />} />
             <Route path="/chiron" element={<FooterPages page="chiron" />} />
+            <Route path="/divo" element={<FooterPages page="divo" />} />
+            <Route
+              path="/centodieci"
+              element={<FooterPages page="centodieci" />}
+            />
             {/* CUSTOMER SERVICE */}
             <Route
               path="/individual-service"
