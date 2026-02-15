@@ -31,7 +31,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
-
 }
 
 .card-head {
@@ -105,7 +104,13 @@
   padding: 80px 20px;
   box-sizing: border-box;
   position: relative;
-  /* padding: 20px; */
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.main_car_section::-webkit-scrollbar {
+  display: none;
 }
 
 .main_car_section::before {
@@ -129,6 +134,13 @@
   margin-bottom: 60px;
   padding: 0 20px;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.headdings::-webkit-scrollbar {
+  display: none;
 }
 
 .headdings h3 {
@@ -140,6 +152,12 @@
   text-transform: uppercase;
   color: #fff;
   text-shadow: 0 4px 20px rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.headdings h3::-webkit-scrollbar {
+  display: none;
 }
 
 .headdings p {
@@ -164,6 +182,13 @@
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.card_section::-webkit-scrollbar {
+  display: none;
 }
 
 .card_section > div {
@@ -186,6 +211,11 @@
   transition: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
   border-radius: 4px;
   box-shadow: 0 8px 30px rgba(0, 0, 0, 0.4);
+  scrollbar-width: none;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
 }
 
 .card:hover {

@@ -10,6 +10,13 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.supermain::-webkit-scrollbar {
+  display: none;
 }
 
 .maindiv {
@@ -19,6 +26,13 @@
   align-items: center;
   padding: 60px 20px 0 20px;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.maindiv::-webkit-scrollbar {
+  display: none;
 }
 
 .maindiv > p:first-child {
@@ -56,6 +70,13 @@
   padding: 0 20px;
   box-sizing: border-box;
   flex-wrap: wrap;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.card_div::-webkit-scrollbar {
+  display: none;
 }
 
 .data_div {
@@ -65,6 +86,13 @@
   align-items: stretch;
   min-width: 280px;
   max-width: 500px;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.data_div::-webkit-scrollbar {
+  display: none;
 }
 
 .card {
@@ -81,6 +109,11 @@
   background: black;
   box-shadow: 0 10px 40px rgba(0, 0, 0, 0.6);
   transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  scrollbar-width: none;
+}
+
+.card::-webkit-scrollbar {
+  display: none;
 }
 
 .card-title {

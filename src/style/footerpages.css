@@ -7,6 +7,13 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.footer-pages-container::-webkit-scrollbar {
+  display: none;
 }
 
 .footer-page {
@@ -16,6 +23,13 @@
   display: flex;
   flex-direction: column;
   animation: fadeIn 0.8s ease-out;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  scrollbar-width: none;
+}
+
+.footer-page::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes fadeIn {
@@ -40,6 +54,11 @@
   background: linear-gradient(180deg, #1a1a1a 0%, #0a0a0a 100%);
   position: relative;
   overflow: hidden;
+  scrollbar-width: none;
+}
+
+.footer-page-hero::-webkit-scrollbar {
+  display: none;
 }
 
 .footer-page-hero::before {
@@ -90,6 +109,12 @@
   position: relative;
   z-index: 1;
   animation: slideDown 1s ease-out;
+  overflow: hidden;
+  scrollbar-width: none;
+}
+
+.footer-page-hero h1::-webkit-scrollbar {
+  display: none;
 }
 
 @keyframes slideDown {
