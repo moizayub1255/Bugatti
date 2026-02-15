@@ -11,6 +11,7 @@ import Animation from "./components/animation/Animation";
 import IteratorBugattiLive from "./components/bugatiLive/IteratorBugattiLive";
 import Footer from "./components/footer/Footer";
 import FooterPages from "./components/footerpages/FooterPages";
+import ScrollToTop from "./components/ScrollToTop";
 
 // Home Page Component
 const Home = () => (
@@ -26,6 +27,7 @@ const Home = () => (
 function App() {
   return (
     <>
+      <ScrollToTop />
       <div className="main">
         <Navbar />
         <div style={{ paddingTop: "80px" }}>
