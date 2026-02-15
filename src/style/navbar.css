@@ -23,6 +23,13 @@
   padding: 0;
 }
 
+.leftNav li a,
+.rightNav li a,
+.brandName a {
+  color: #fff;
+  text-decoration: none;
+}
+
 .leftNav li,
 .rightNav li {
   font-family: "Poppins", sans-serif;
@@ -41,22 +48,7 @@
   color: #fff;
 }
 
-.leftNav li::after,
-.rightNav li::after {
-  content: "";
-  position: absolute;
-  bottom: -5px;
-  left: 0;
-  width: 0;
-  height: 2px;
-  background: #fff;
-  transition: width 0.3s ease;
-}
-
-.leftNav li:hover::after,
-.rightNav li:hover::after {
-  width: 100%;
-}
+/* Removed underline effect on hover */
 
 .brandName h1 {
   font-family: "Playfair Display", serif;
