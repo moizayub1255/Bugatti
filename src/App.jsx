@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { Routes, Route } from "react-router-dom";
 import Navbar from "./components/navbar/Navbar";
 import Startpage from "./components/startpage/Startpage";
 import LatestNews from "./components/latestenews/LatestNews";
@@ -12,61 +12,68 @@ import IteratorBugattiLive from "./components/bugatiLive/IteratorBugattiLive";
 import Footer from "./components/footer/Footer";
 import FooterPages from "./components/footerpages/FooterPages";
 
+// Home Page Component
+const Home = () => (
+  <>
+    <Startpage />
+    <LatestNews />
+    <LAmainsonIterator />
+    <IteratorSports />
+    <IteratorBugattiLive />
+  </>
+);
+
 function App() {
-  const [footerPage, setFooterPage] = useState(null);
-
-  const handleFooterClick = (page) => {
-    setFooterPage(page);
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
-  const handleBackToMain = () => {
-    setFooterPage(null);
-  };
-
   return (
     <>
       <div className="main">
         <Navbar />
-
-        {footerPage ? (
-          <div style={{ paddingTop: "80px" }}>
-            <button
-              onClick={handleBackToMain}
-              style={{
-                position: "fixed",
-                top: "100px",
-                left: "20px",
-                zIndex: 1000,
-                padding: "12px 24px",
-                background: "#ffffff",
-                color: "#000000",
-                border: "none",
-                fontFamily: "Poppins, sans-serif",
-                fontSize: "14px",
-                fontWeight: 600,
-                letterSpacing: "1px",
-                cursor: "pointer",
-                textTransform: "uppercase",
-              }}
-            >
-              ← Back
-            </button>
-            <FooterPages page={footerPage} />
-          </div>
-        ) : (
-          <>
-            <Startpage />
-            <LatestNews />
-            <LAmainsonIterator />
-            <IteratorSports />
-            {/* <Bugattisur/> */}
-            {/* <Animation/> */}
-            <IteratorBugattiLive />
-          </>
-        )}
-
-        <Footer onFooterClick={handleFooterClick} />
+        <div style={{ paddingTop: "80px" }}>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            {/* LA MARQUE */}
+            <Route path="/discover" element={<FooterPages page="discover" />} />
+            <Route path="/careers" element={<FooterPages page="careers" />} />
+            <Route path="/newsroom" element={<FooterPages page="newsroom" />} />
+            <Route path="/classics" element={<FooterPages page="classics" />} />
+            <Route path="/contact" element={<FooterPages page="contact" />} />
+            {/* HYPER SPORTS CARS */}
+            <Route
+              path="/tourbillon"
+              element={<FooterPages page="tourbillon" />}
+            />
+            <Route path="/mistral" element={<FooterPages page="mistral" />} />
+            <Route path="/bolide" element={<FooterPages page="bolide" />} />
+            <Route path="/chiron" element={<FooterPages page="chiron" />} />
+            {/* CUSTOMER SERVICE */}
+            <Route
+              path="/individual-service"
+              element={<FooterPages page="individual-service" />}
+            />
+            <Route
+              path="/maintenance"
+              element={<FooterPages page="maintenance" />}
+            />
+            <Route
+              path="/service-partner"
+              element={<FooterPages page="service-partner" />}
+            />
+            <Route path="/passport" element={<FooterPages page="passport" />} />
+            {/* LIFESTYLE */}
+            <Route
+              path="/art-of-living"
+              element={<FooterPages page="art-of-living" />}
+            />
+            <Route path="/apparel" element={<FooterPages page="apparel" />} />
+            <Route path="/watches" element={<FooterPages page="watches" />} />
+            <Route
+              path="/collectibles"
+              element={<FooterPages page="collectibles" />}
+            />
+            <Route path="/store" element={<FooterPages page="store" />} />
+          </Routes>
+        </div>
+        <Footer />
       </div>
     </>
   );
