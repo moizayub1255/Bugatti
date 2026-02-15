@@ -3,10 +3,8 @@ import Navbar from "./components/navbar/Navbar";
 import Startpage from "./components/startpage/Startpage";
 import LatestNews from "./components/latestenews/LatestNews";
 import "../src/App.css";
-import LaMaisonbugati from "./components/maisonbugatti/LaMaisonbugati";
 import LAmainsonIterator from "./components/maisonbugatti/LAmainsonIterator";
 import IteratorSports from "./components/sportscar/IteratorSports";
-import Bugattisur from "./components/bugattisur/Bugattisur";
 import Animation from "./components/animation/Animation";
 import IteratorBugattiLive from "./components/bugatiLive/IteratorBugattiLive";
 import Footer from "./components/footer/Footer";
@@ -18,6 +16,7 @@ const Home = () => (
   <>
     <Startpage />
     <LatestNews />
+    <Animation />
     <LAmainsonIterator />
     <IteratorSports />
     <IteratorBugattiLive />
@@ -35,6 +34,10 @@ function App() {
             <Route path="/" element={<Home />} />
             {/* LA MARQUE */}
             <Route path="/discover" element={<FooterPages page="discover" />} />
+            <Route
+              path="/historic-models"
+              element={<FooterPages page="historic-models" />}
+            />
             <Route path="/careers" element={<FooterPages page="careers" />} />
             <Route path="/newsroom" element={<FooterPages page="newsroom" />} />
             <Route path="/classics" element={<FooterPages page="classics" />} />

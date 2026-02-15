@@ -45,6 +45,112 @@ const DiscoverBugatti = () => (
   </div>
 );
 
+const HistoricModels = () => (
+  <div className="footer-page">
+    <div className="footer-page-hero">
+      <h1>Historic Models</h1>
+      <p>Milestones in Automotive History</p>
+    </div>
+    <div className="footer-page-content">
+      <div className="footer-page-section">
+        <h2>Type 35 - The Racing Legend</h2>
+        <p>
+          The Bugatti Type 35 is arguably the most successful racing car of all
+          time. Introduced in 1924, it won over 1,000 races until 1930,
+          including five consecutive French Grand Prix victories. Its elegant
+          design, featuring the distinctive horseshoe-shaped radiator grille,
+          and mechanical excellence set the standard for racing cars.
+        </p>
+        <ul>
+          <li>Engine: 2.0L Straight-8</li>
+          <li>Power: 90-120 hp</li>
+          <li>Top Speed: 180 km/h</li>
+          <li>Wins: Over 1,000 races</li>
+        </ul>
+      </div>
+      <div className="footer-page-section">
+        <h2>Type 57SC Atlantic</h2>
+        <p>
+          Considered by many as the most beautiful car ever created, the Type
+          57SC Atlantic was produced from 1936 to 1938. Only three examples were
+          built, each a masterpiece of coachbuilding. Its most distinctive
+          feature is the dorsal fin, known as the "bornite" strip, which flows
+          from the front hood to the rear.
+        </p>
+        <ul>
+          <li>Engine: 3.3L Supercharged Straight-8</li>
+          <li>Power: 200 hp</li>
+          <li>Top Speed: 200 km/h</li>
+          <li>Production: Only 3 units</li>
+        </ul>
+      </div>
+      <div className="footer-page-section">
+        <h2>Type 41 Royale</h2>
+        <p>
+          The Type 41 Royale was Bugatti's largest and most luxurious
+          automobile, designed to be the finest car in the world. With its
+          massive 5.7-liter straight-eight engine, it was one of the most
+          powerful cars of its era. Only six examples were ever produced, each
+          uniquely coachbuilt.
+        </p>
+        <ul>
+          <li>Engine: 5.7L Straight-8</li>
+          <li>Power: 300 hp</li>
+          <li>Top Speed: 200 km/h</li>
+          <li>Wheelbase: 4.3 meters</li>
+        </ul>
+      </div>
+      <div className="footer-page-section">
+        <h2>Type 57 - The Gentleman's Express</h2>
+        <p>
+          The Type 57 was Bugatti's grand touring car, combining performance
+          with elegance. It featured advanced engineering including independent
+          front suspension and a synchromesh gearbox. The Type 57 won numerous
+          races and became the foundation for iconic coachbuilt bodies.
+        </p>
+        <ul>
+          <li>Engine: 3.3L Straight-8</li>
+          <li>Power: 135-200 hp</li>
+          <li>Top Speed: 190 km/h</li>
+          <li>Production: ~710 units</li>
+        </ul>
+      </div>
+      <div className="footer-page-section">
+        <h2>EB 110 - The Modern Classic</h2>
+        <p>
+          The EB 110 marked Bugatti's triumphant return to the hyper sports car
+          market in 1991. Named to honor the company's 110th anniversary, it
+          featured groundbreaking technology including a quad-turbocharged V12
+          engine and carbon fiber chassis. Only 139 examples were produced.
+        </p>
+        <ul>
+          <li>Engine: 3.5L V12 Quad-Turbo</li>
+          <li>Power: 560 hp</li>
+          <li>Top Speed: 342 km/h</li>
+          <li>Production: 139 units</li>
+        </ul>
+      </div>
+      <div className="footer-page-section">
+        <h2>Bugatti Classic Program</h2>
+        <p>
+          Our dedicated Bugatti Classic program ensures that these historic
+          Bugattis receive the care and attention they deserve. With factory
+          -certified technicians and access to original specifications, we
+          preserve these automotive treasures for future generations.
+        </p>
+        <p>The Classic program offers:</p>
+        <ul>
+          <li>Factory restoration services</li>
+          <li>Genuine parts availability</li>
+          <li>Expert technical support</li>
+          <li>Authentication certificates</li>
+          <li>Provenance research</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+);
+
 const Careers = () => (
   <div className="footer-page">
     <div className="footer-page-hero">
@@ -765,6 +871,8 @@ const FooterPages = ({ page }) => {
       // LA MARQUE
       case "discover":
         return <DiscoverBugatti />;
+      case "historic-models":
+        return <HistoricModels />;
       case "careers":
         return <Careers />;
       case "newsroom":
