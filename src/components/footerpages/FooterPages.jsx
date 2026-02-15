@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import "../../style/footerpages.css";
 
 // LA MARQUE Pages
@@ -684,10 +684,10 @@ const Store = () => (
 
 // Main Component
 const FooterPages = ({ page }) => {
-  const [activePage, setActivePage] = useState(page || "discover");
+  // Use the page prop directly instead of local state to ensure proper re-rendering on route changes
 
   const renderPage = () => {
-    switch (activePage) {
+    switch (page) {
       // LA MARQUE
       case "discover":
         return <DiscoverBugatti />;

@@ -16,31 +16,41 @@ const Navbar = () => {
     <div>
       <div className="mainNav">
         <div className="brandName">
-          <Link to="/">
+          <Link to="/" onClick={closeMenu}>
             <h1>BUGATTI</h1>
           </Link>
         </div>
         <div className={`navContent ${isMenuOpen ? "active" : ""}`}>
           <div className="leftNav">
             <ul>
-              <li onClick={closeMenu}>
-                <Link to="/discover">LA MARQUE</Link>
+              <li>
+                <Link to="/discover" onClick={closeMenu}>
+                  LA MARQUE
+                </Link>
               </li>
-              <li onClick={closeMenu}>
-                <Link to="/tourbillon">HYPER SPORTS CARS</Link>
+              <li>
+                <Link to="/tourbillon" onClick={closeMenu}>
+                  HYPER SPORTS CARS
+                </Link>
               </li>
-              <li onClick={closeMenu}>
-                <Link to="/art-of-living">LIFESTYLE</Link>
+              <li>
+                <Link to="/art-of-living" onClick={closeMenu}>
+                  LIFESTYLE
+                </Link>
               </li>
             </ul>
           </div>
           <div className="rightNav">
             <ul>
-              <li onClick={closeMenu}>
-                <Link to="/newsroom">NewsRoom</Link>
+              <li>
+                <Link to="/newsroom" onClick={closeMenu}>
+                  NewsRoom
+                </Link>
               </li>
-              <li onClick={closeMenu}>
-                <Link to="/store">STORE</Link>
+              <li>
+                <Link to="/store" onClick={closeMenu}>
+                  STORE
+                </Link>
               </li>
               <li onClick={closeMenu}>EN</li>
               <li onClick={closeMenu}>FR</li>
